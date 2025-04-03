@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'views/stateless_screen.dart';
 import 'views/stateful_screen.dart';
+import 'views/inicio_screen.dart'; // Importa InicioScreen
 
 void main() {
   runApp(const MyApp());
@@ -52,6 +53,15 @@ class HomeScreen extends StatelessWidget {
                 );
               },
               child: const Text('Ir a StatefulWidget'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const InicioScreen()),
+                );
+              },
+              child: const Text('Ir a Inicio'),
             ),
           ],
         ),
