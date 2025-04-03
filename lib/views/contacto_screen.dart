@@ -13,7 +13,7 @@ class _ContactoScreenState extends State<ContactoScreen> {
   @override
   void initState() {
     super.initState();
-    print('initState: La pantalla Contacto se ha creado');
+    print('initState: La pantalla Contacto se ha creado correctamente');
   }
 
   @override
