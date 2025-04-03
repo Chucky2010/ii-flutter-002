@@ -8,6 +8,18 @@ class AcercaDeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Acerca de'),
+        actions: [
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pop(context); // Regresa a la pantalla anterior
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.green, // Fondo blanco
+              foregroundColor: Colors.black, // Texto negro
+            ),
+            child: const Text('Inicio'),
+          ),
+        ],
       ),
       body: const Center(
         child: Text(
